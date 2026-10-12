@@ -6,7 +6,6 @@
   <title>진행자 페이지</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="slides.js"></script>
 </head>
 <body class="host">
@@ -32,7 +31,6 @@
     <aside class="side">
       <section>
         <h3>참가자 접속 방법</h3>
-        <div id="qr"></div>
         <div class="linkrow">
           <input id="link" readonly>
           <button id="copy" class="ghost">복사</button>
@@ -107,8 +105,6 @@
     $('code').textContent = code;
     const url = new URL('index.html?room=' + code, location.href).href;
     $('link').value = url;
-    $('qr').innerHTML = '';
-    if (window.QRCode) new QRCode($('qr'), { text: url, width: 160, height: 160 });
   }
 
   function startPeer() {
