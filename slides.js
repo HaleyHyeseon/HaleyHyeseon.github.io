@@ -30,13 +30,13 @@ const SLIDES = [
   },
   {
     html: `
-      <img src="images/VirtualServer.png" alt="Virtual Server">
+      <img class="full" src="images/VirtualServer.png" alt="Virtual Server">
     `,
     note: '타이머를 켜고 다음 슬라이드로 넘어가세요.',
   },
   {
     html: `
-      <img src="images/ic_service_objStorage_44.png" alt="">
+      <img class="full" src="images/ic_service_objStorage_44.png" alt="">
     `,
     note: '타이머를 켜고 다음 슬라이드로 넘어가세요.',
   },
