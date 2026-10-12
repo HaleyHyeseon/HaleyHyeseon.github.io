@@ -25,6 +25,7 @@
         <button id="next">다음</button>
         <button id="hide" class="ghost">참가자 화면 가리기</button>
       </div>
+      <div id="jumps" class="jumps"></div>
       <p class="hint">키보드: ← → (또는 스페이스)로 넘기기, B로 화면 가리기</p>
     </main>
 
@@ -84,6 +85,25 @@
     $('next').disabled = index === SLIDES.length - 1;
     $('hide').textContent = hidden ? '참가자 화면 다시 보이기' : '참가자 화면 가리기';
     $('hide').classList.toggle('on', hidden);
+    render Jumps();
+  }
+
+  function renderJumps() {
+    const box = $('jumps');
+    if (!box.dataset.built) {
+      SLIDES.forEach((s, i) => {
+        if (!s.button) return;
+        const b = document.createElement('button');
+        b.className = 'ghost';
+        b.textContent = s.button;
+        b.dataset.i = i;
+        b.onclick = () => go(i);
+        box.appendChild(b);
+      });
+      box.dataset.built = '1';
+    }
+    box.querySelectorAll('button').forEach(b =>
+      b.classList.toggle('on', Number(b.dataset.i) === index));
   }
 
   function go(n) {
