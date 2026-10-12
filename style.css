@@ -149,3 +149,22 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 .side .linkrow input { flex: 1; min-width: 0; font-size: 13px; }
 .side #note { line-height: 1.6; white-space: pre-wrap; }
 .hint { margin-top: 14px; color: var(--muted); font-size: 13px; text-align: center; }
+
+/* ---------- 화면 가득 채우는 이미지 ---------- */
+.stage { position: relative; }
+
+.stage img.full {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;   /* 그림 전체가 보이도록 (비율이 다르면 위아래/좌우에 빈 공간) */
+}
+
+.stage img.full.cover {
+  object-fit: cover;     /* 빈 공간 없이 꽉 채움 (비율이 다르면 가장자리가 잘림) */
+}
+
+.stage:has(img.full) { background: #000; }  /* 빈 공간이 생길 때 검은색으로 */
