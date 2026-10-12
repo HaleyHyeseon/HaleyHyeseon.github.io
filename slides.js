@@ -21,6 +21,7 @@ const SLIDES = [
   },
   {
     html: `
+      `<img src="https://cloud.samsungsds.com/serviceportal/services/storage/blockStorage.html" alt="">`
       <h2>게임 규칙</h2>
       <p>1. 팀별로 모여 앉습니다<br>2. 진행자의 신호를 기다립니다<br>3. 화면의 그림을 보고 힌트를 찾으세요</p>
     `,
