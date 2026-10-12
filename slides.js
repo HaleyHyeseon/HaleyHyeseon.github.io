@@ -13,7 +13,6 @@
 
 const SLIDES = [
   {
-    button: '시작화면',
     html: `
       <h1>10월 SCP SA그룹 도란도란</h1>
       <h2>그룹장杯 SA생결단</h2>
