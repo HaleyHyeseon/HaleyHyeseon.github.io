@@ -168,3 +168,14 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 }
 
 .stage:has(img.full) { background: #000; }  /* 빈 공간이 생길 때 검은색으로 */
+
+/* ---------- 100x100 픽셀로 확대해서 보여주기 ---------- */
+.stage img.px100 {
+  width: 100px;
+  height: 100px;
+  max-width: none;
+  max-height: none;
+  image-rendering: pixelated;  /* 확대해도 흐려지지 않고 또렷하게 */
+}
+
+.stage:has(img.px100) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
