@@ -179,3 +179,4 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 }
 
 .stage:has(img.px100) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
+.stage-wrap:has(img.px100) { backgroud: #fff; }
