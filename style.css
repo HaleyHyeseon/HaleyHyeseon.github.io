@@ -1,0 +1,151 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
+:root {
+  --ink: #10222f;
+  --ink-2: #183246;
+  --paper: #f3efe4;
+  --muted: #9fb0bd;
+  --accent: #f2b705;
+  --line: #2a4358;
+}
+
+* { box-sizing: border-box; margin: 0; }
+[hidden] { display: none !important; }
+
+html, body { height: 100%; }
+body {
+  font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* ---------- 슬라이드 무대 (16:9, 화면 크기에 맞춰 글자도 같이 커지고 작아짐) ---------- */
+.stage {
+  aspect-ratio: 16 / 9;
+  container-type: inline-size;
+  background: var(--ink-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4cqw;
+  gap: 2.4cqw;
+  overflow: hidden;
+}
+.stage h1 { font-size: 8cqw; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; }
+.stage h2 { font-size: 5.6cqw; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; }
+.stage p  { font-size: 3.4cqw; line-height: 1.55; color: #d9d5c8; }
+.stage img { max-width: 100%; max-height: 100%; min-height: 0; object-fit: contain; }
+
+.stage-wrap {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+.stage-wrap .stage { width: min(100vw, calc(100vh * 16 / 9)); }
+.stage.inline { width: 100%; border-radius: 10px; border: 1px solid var(--line); }
+
+/* ---------- 버튼 / 입력 ---------- */
+button {
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--paper);
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+button:hover:not(:disabled) { background: #fff; }
+button:disabled { opacity: 0.35; cursor: default; }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+button.ghost { background: transparent; color: var(--paper); border: 1px solid var(--line); }
+button.ghost:hover:not(:disabled) { background: var(--ink-2); }
+button.on { background: var(--accent); color: var(--ink); }
+
+input {
+  font: inherit;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+/* ---------- 참가자 페이지 ---------- */
+.join {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+.join h1 { font-size: 28px; }
+.join p { color: var(--muted); }
+.join input {
+  width: 9em;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding-left: 0.3em;
+}
+.join button { font-size: 18px; padding: 12px 36px; }
+
+.pill {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  background: rgba(16, 34, 47, 0.92);
+  color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+.pill.ok { border-color: var(--accent); }
+
+/* ---------- 진행자 페이지 ---------- */
+body.host { height: auto; min-height: 100%; padding: 16px; }
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.bar .label { color: var(--muted); font-size: 14px; margin-right: 10px; }
+.bar #code { font-size: 30px; letter-spacing: 0.18em; color: var(--accent); }
+.bar .status { margin-left: auto; color: var(--muted); font-size: 14px; }
+
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 20px; align-items: start; }
+@media (max-width: 820px) { .layout { grid-template-columns: 1fr; } }
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+.controls #pos { min-width: 5em; text-align: center; color: var(--muted); }
+.controls button#next { padding-left: 28px; padding-right: 28px; }
+
+.side section { padding-bottom: 18px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+.side section:last-child { border-bottom: 0; }
+.side h3 { font-size: 14px; font-weight: 600; color: var(--muted); margin-bottom: 10px; }
+.side #qr { background: #fff; padding: 10px; border-radius: 8px; width: fit-content; margin-bottom: 10px; }
+.side #qr:empty { display: none; }
+.side .linkrow { display: flex; gap: 8px; }
+.side .linkrow input { flex: 1; min-width: 0; font-size: 13px; }
+.side #note { line-height: 1.6; white-space: pre-wrap; }
+.hint { margin-top: 14px; color: var(--muted); font-size: 13px; text-align: center; }
