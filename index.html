@@ -1,13 +1,106 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹 호스팅</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>게임 참가</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+  <script src="slides.js"></script>
 </head>
 <body>
-    Hello Github~
+
+  <div id="join" class="join" hidden>
+    <h1>게임 참가</h1>
+    <p>진행자가 알려준 참가 코드를 입력하세요</p>
+    <input id="codeInput" maxlength="4" autocomplete="off" autocapitalize="characters" placeholder="ABCD">
+    <button id="joinBtn">입장하기</button>
+  </div>
+
+  <div id="view" class="stage-wrap" hidden>
+    <div id="stage" class="stage"></div>
+  </div>
+
+  <div id="pill" class="pill" hidden></div>
+
+<script>
+  const PREFIX = 'ghpages-slides-';
+  const $ = id => document.getElementById(id);
+
+  let code = (new URLSearchParams(location.search).get('room') || '').trim().toUpperCase();
+  let peer = null;
+  let attempt = 0;
+  let retryTimer = null;
+  let cur = { index: 0, hidden: false };
+
+  // 이미지 미리 불러오기
+  SLIDES.forEach(s => {
+    for (const m of s.html.matchAll(/src="([^"]+)"/g)) new Image().src = m[1];
+  });
+
+  function showSlide() {
+    $('stage').innerHTML = cur.hidden
+      ? '<h2>잠시만 기다려 주세요</h2>'
+      : ((SLIDES[cur.index] || {}).html || '');
+  }
+
+  let pillTimer = null;
+  function setPill(text, ok) {
+    clearTimeout(pillTimer);
+    $('pill').textContent = text;
+    $('pill').className = 'pill' + (ok ? ' ok' : '');
+    $('pill').hidden = false;
+    if (ok) pillTimer = setTimeout(() => { $('pill').hidden = true; }, 2000);
+  }
+
+  function connect() {
+    clearTimeout(retryTimer);
+    const my = ++attempt; // 이전 시도의 이벤트는 무시하기 위한 번호표
+    if (peer) peer.destroy();
+    setPill('연결 중...');
+
+    const retry = msg => {
+      if (my !== attempt) return;
+      setPill(msg);
+      clearTimeout(retryTimer);
+      retryTimer = setTimeout(connect, 3000);
+    };
+
+    peer = new Peer();
+    peer.on('open', () => {
+      if (my !== attempt) return;
+      const conn = peer.connect(PREFIX + code, { reliable: true });
+      conn.on('open', () => { if (my === attempt) setPill('연결되었습니다', true); });
+      conn.on('data', d => {
+        if (my === attempt && d && d.type === 'state') { cur = d; showSlide(); }
+      });
+      conn.on('close', () => retry('연결이 끊겼어요. 다시 연결하는 중...'));
+    });
+    peer.on('error', err => {
+      retry(err.type === 'peer-unavailable'
+        ? '진행자를 찾는 중... 코드를 다시 확인해 주세요'
+        : '다시 연결하는 중...');
+    });
+  }
+
+  function enter() {
+    $('join').hidden = true;
+    $('view').hidden = false;
+    showSlide();
+    connect();
+  }
+
+  $('joinBtn').onclick = () => {
+    const v = $('codeInput').value.trim().toUpperCase();
+    if (!v) { $('codeInput').focus(); return; }
+    code = v;
+    history.replaceState(null, '', '?room=' + code);
+    enter();
+  };
+  $('codeInput').addEventListener('keydown', e => { if (e.key === 'Enter') $('joinBtn').click(); });
+
+  if (code) enter();
+  else $('join').hidden = false;
+</script>
 </body>
 </html>
