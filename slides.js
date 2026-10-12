@@ -22,28 +22,89 @@ const SLIDES = [
   },
   {
     html: `
-      <h1>SA그룹의 기본 덕목</h1>
+      <h2>1라운드<br>스드스인의 기본 덕목</h2>
+      <h2>게임 규칙</h2>
+      <p>1. 화면에 나온 초성을 유심히 살펴주세요.<br>2. 짐작가는 단어가 있다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
+    `,
+    note: '규칙을 소리 내어 읽어주세요.',
+  },
+  {
+    html: `
+      <h2>ㅅㅅㅇㅅㄷㅇㅅ</h2>
+    `,
+    note: '규칙을 소리 내어 읽어주세요.',
+  },
+  {
+    html: `
+      <h2>2라운드<br>SA그룹의 기본 덕목</h2>
       <h2>게임 규칙</h2>
       <p>1. 화면에 나온 그림을 유심히 살펴주세요.<br>2. 이름을 아신다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
     `,
     note: '규칙을 소리 내어 읽어주세요.',
   },
   {
-    html: `
-      <img class="px100" src="images/VirtualServer.png" alt="Virtual Server">
-    `,
-    note: '타이머를 켜고 다음 슬라이드로 넘어가세요.',
+    html: `<img class="px100" src="images/VirtualServer.png" alt="">`,
+    note: 'Virtual Server',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_objStorage_44.png" alt="">`,
+    note: 'Object Storage',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_conRegistry_44.png" alt="">`,
+    note: 'Container Registry',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_Mysql_44.png" alt="">`,
+    note: 'MySQL(DBaaS)',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_parallelFS_44.png" alt="">`,
+    note: 'Parallel File Storage',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_gcdn_44.png" alt="">`,
+    note: 'Global CDN',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_directConnect_44.png" alt="">`,
+    note: 'Direct Connect',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_securedFirewall_44.png" alt="">`,
+    note: 'Secured Firewall',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_apiGateway_44.png" alt="">`,
+    note: 'API Gateway',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_logNaudit_44.png" alt="">`,
+    note: 'Logging & Audit',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_waf_44.png" alt="">`,
+    note: 'WAF',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_simpleAIinference_44.png" alt="">`,
+    note: 'Simple AI Inference',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_dedicatedCloud_44.png" alt="">`,
+    note: 'Dedicated Cloud',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_acceleratedServer_44.png" alt="">`,
+    note: 'Accelerated Server',
+  },
+  {
+    html: `<img class="px100" src="images/ic_service_vpn_44.png" alt="">`,
+    note: 'VPN',
   },
   {
     html: `
-      <img class="px100" src="images/ic_service_objStorage_44.png" alt="">
-    `,
-    note: '타이머를 켜고 다음 슬라이드로 넘어가세요.',
-  },
-
-  {
-    html: `
-      <h1>수고하셨습니다</h1>
+      <h2>1라운드 끝!<br>수고하셨습니다 ◠ ‿ ◠</h1>
     `,
     note: '',
   },
