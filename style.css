@@ -177,3 +177,18 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 }
 
 .stage:has(img.px100) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
+
+/* ---------- 이동 버튼 (휴대폰용) ---------- */
+.jumps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.jumps:empty { display: none; }
+.jumps button { padding: 16px 10px; font-size: 16px; }
+
+@media (max-width: 820px) {
+  .controls button { padding: 14px 22px; font-size: 16px; }
+  .hint { display: none; }  /* 키보드 안내는 휴대폰에선 숨김 */
+}
