@@ -14,26 +14,33 @@
 const SLIDES = [
   {
     html: `
-      <h1>hello github</h1>
+      <h1>10월 SCP SA그룹 도란도란</h1>
+      <h2>그룹장杯 SA생결단</h2>
       <p>잠시 후 게임이 시작됩니다</p>
     `,
     note: '입장한 참가자 수를 확인하고 시작하세요.',
   },
   {
     html: `
+      <h1>SA그룹의 기본 덕목</h1>
       <h2>게임 규칙</h2>
-      <img src="images/VirtualServer.png" alt="Virtual Server">
-      <p>1. 팀별로 모여 앉습니다<br>2. 진행자의 신호를 기다립니다<br>3. 화면의 그림을 보고 힌트를 찾으세요</p>
+      <p>1. 화면에 나온 그림을 유심히 살펴주세요.<br>2. 이름을 아신다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
     `,
     note: '규칙을 소리 내어 읽어주세요.',
   },
   {
     html: `
-      <h2>라운드 1</h2>
-      <p>제한 시간 3분</p>
+      <img src="images/VirtualServer.png" alt="Virtual Server">
     `,
     note: '타이머를 켜고 다음 슬라이드로 넘어가세요.',
   },
+  {
+    html: `
+      <img src="images/ic_service_objStorage_44.png" alt="">
+    `,
+    note: '타이머를 켜고 다음 슬라이드로 넘어가세요.',
+  },
+
   {
     html: `
       <h1>수고하셨습니다</h1>
