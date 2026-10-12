@@ -21,8 +21,8 @@ const SLIDES = [
   },
   {
     html: `
-      `<img src="images/VirtualServer.png" alt="">`
       <h2>게임 규칙</h2>
+      <img src="images/VirtualServer.png" alt="Virtual Server">
       <p>1. 팀별로 모여 앉습니다<br>2. 진행자의 신호를 기다립니다<br>3. 화면의 그림을 보고 힌트를 찾으세요</p>
     `,
     note: '규칙을 소리 내어 읽어주세요.',
