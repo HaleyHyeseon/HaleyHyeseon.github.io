@@ -167,8 +167,6 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
   object-fit: cover;     /* 빈 공간 없이 꽉 채움 (비율이 다르면 가장자리가 잘림) */
 }
 
-.stage:has(img.full) { background: #000; }  /* 빈 공간이 생길 때 검은색으로 */
-
 /* ---------- 100x100 픽셀로 확대해서 보여주기 ---------- */
 .stage img.px100 {
   width: 100px;
@@ -179,4 +177,3 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 }
 
 .stage:has(img.px100) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
-.stage-wrap:has(img.px100) { backgroud: #fff; }
