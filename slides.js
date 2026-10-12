@@ -41,19 +41,19 @@ const SLIDES = [
     note: '클라우드서비스사업부',
   },
   {
-    html: `<h2>ㄴㅅㅍㅌ</h2>`,
-    note: '녹스포탈',
+    html: `<h2>ㄴㅅ ㅍㅌ</h2>`,
+    note: '녹스 포탈',
   },
   {
     html: `<h2>ㅋㅍㄹㅇㅅ</h2>`,
     note: '컨플루언스',
   },
   {
-    html: `<h2>ㄹㅇㅆㅁ</h2>`,
-    note: '리얼써밋',
+    html: `<h2>ㄹㅇ ㅆㅁ</h2>`,
+    note: '리얼 써밋',
   },
   {
-    html: `<h2>ㅇㅅㅅㅍㅇㅅㅇㅇㄱㄹ</h2>`,
+    html: `<h2>ㅇㅅㅅㅍ ㅇㅅㅇㅇㄱㄹ</h2>`,
     note: 'SCP SA그룹',
   },
   {
@@ -65,8 +65,8 @@ const SLIDES = [
     note: '폴바셋',
   },
   {
-    html: `<h2>ㅂㅇㅋㄷ</h2>`,
-    note: '법인콘도',
+    html: `<h2>ㅂㅇ ㅋㄷ</h2>`,
+    note: '법인 콘도',
   },
   {
     html: `<h2>ㅇㄹㅅ</h2>`,
@@ -77,20 +77,20 @@ const SLIDES = [
     note: '자율출퇴근제',
   },
   {
-    html: `<h2>ㅂㅈㅍㅇㅌ</h2>`,
-    note: '복지포인트',
+    html: `<h2>ㅂㅈ ㅍㅇㅌ</h2>`,
+    note: '복지 포인트',
   },
   {
-    html: `<h2>ㅁㄹㄱㄱㅎㅇㅎ</h2>`,
-    note: '미래공감협의회',
+    html: `<h2>ㅍㅁㄹ ㄷㅇ</h2>`,
+    note: '패밀리 데이',
   },
   {
-    html: `<h2>ㅍㅁㄹㄷㅇ</h2>`,
-    note: '패밀리데이',
+    html: `<h2>ㅈㅇ ㅈㅁㄱ</h2>`,
+    note: '지역 전문가',
   },
   {
-    html: `<h2>ㅈㅇㅈㅁㄱ</h2>`,
-    note: '지역전문가',
+    html: `<h2>ㅇㅈㅅ ㄱㄹㅈ</h2>`,
+    note: '양종성 그룹장',
   },
   {
     html: `
@@ -160,7 +160,7 @@ const SLIDES = [
   },
   {
     html: `<img class="px100" src="images/ic_service_acceleratedServer_44.png" alt="">`,
-    note: 'Accelerated Server',
+    note: 'Accelerated Server (서비스명이 바뀌었습니다)',
   },
   {
     html: `<img class="px100" src="images/ic_service_vpn_44.png" alt="">`,
