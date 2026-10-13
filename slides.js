@@ -29,44 +29,80 @@ const SLIDES = [
     note: '규칙을 소리 내어 읽어주세요.',
   },
   {
-    html: `<img class="px100 blur" src="images/AlibabaCloud.png" alt="">`,
+    html: `<img class="px200 blur" src="images/AlibabaCloud.png" alt="">`,
     note: 'AWS',
   },
   {
-    html: `<img class="px100" src="images/AlibabaCloud.png" alt="">`,
+    html: `<img class="px200" src="images/AlibabaCloud.png" alt="">`,
     note: 'AWS',
+  },
+  {
+    html: `<img class="px100 blur" src="images/oracle-cloud.png" alt="">`,
+    note: 'Oracle Cloud',
   },
   {
     html: `<img class="px100" src="images/oracle-cloud.png" alt="">`,
     note: 'Oracle Cloud',
   },
   {
+    html: `<img class="px100 blur" src="images/low_NCP_logo_white_200x200.png" alt="">`,
+    note: '네이버클라우드',
+  },
+  {
     html: `<img class="px100" src="images/low_NCP_logo_white_200x200.png" alt="">`,
     note: '네이버클라우드',
+  },
+  {
+    html: `<img class="px100 blur" src="images/MsAzure.png" alt="">`,
+    note: 'MS Azure',
   },
   {
     html: `<img class="px100" src="images/MsAzure.png" alt="">`,
     note: 'MS Azure',
   },
   {
+    html: `<img class="px100 blur" src="images/SamsungSDS.png" alt="">`,
+    note: '삼성SDS',
+  },
+  {
     html: `<img class="px100" src="images/SamsungSDS.png" alt="">`,
     note: '삼성SDS',
+  },
+  {
+    html: `<img class="px100 blur" src="images/GoogleCloud.png" alt="">`,
+    note: 'Google Cloud',
   },
   {
     html: `<img class="px100" src="images/GoogleCloud.png" alt="">`,
     note: 'Google Cloud',
   },
   {
+    html: `<img class="px100 blur" src="images/kt_cloud_CI_01_(Positive).png" alt="">`,
+    note: 'KT Cloud',
+  },
+  {
     html: `<img class="px100" src="images/kt_cloud_CI_01_(Positive).png" alt="">`,
     note: 'KT Cloud',
+  },
+  {
+    html: `<img class="px100 blur" src="images/AlibabaCloud.png" alt="">`,
+    note: 'Alibaba Cloud',
   },
   {
     html: `<img class="px100" src="images/AlibabaCloud.png" alt="">`,
     note: 'Alibaba Cloud',
   },
   {
+    html: `<img class="px100 blur" src="images/IBM_Cloud_logo.png" alt="">`,
+    note: 'IBM Cloud',
+  },
+  {
     html: `<img class="px100" src="images/IBM_Cloud_logo.png" alt="">`,
     note: 'IBM Cloud',
+  },
+  {
+    html: `<img class="px100 blur" src="images/NhnCloud.png" alt="">`,
+    note: 'NHN CLoud',
   },
   {
     html: `<img class="px100" src="images/NhnCloud.png" alt="">`,
@@ -74,7 +110,13 @@ const SLIDES = [
   },
   {
     html: `
-      <h2>1라운드<br>스드스인의 기본 덕목</h2>
+      <h2>1라운드 끝!<br>수고하셨습니다 :)</h2>
+    `,
+    note: '',
+  },
+  {
+    html: `
+      <h2>2라운드<br>스드스인의 기본 덕목</h2>
       <h2>게임 규칙</h2>
       <p>1. 화면에 나온 초성을 유심히 살펴주세요.<br>2. 짐작가는 단어가 있다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
     `,
@@ -146,13 +188,13 @@ const SLIDES = [
   },
   {
     html: `
-      <h2>1라운드 끝!<br>수고하셨습니다 :)</h2>
+      <h2>2라운드 끝!<br>수고하셨습니다 :)</h2>
     `,
     note: '',
   },
   {
     html: `
-      <h2>2라운드<br>SA그룹의 기본 덕목</h2>
+      <h2>3라운드<br>SA그룹의 기본 덕목</h2>
       <h2>게임 규칙</h2>
       <p>1. 화면에 나온 그림을 유심히 살펴주세요.<br>2. 이름을 아신다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
     `,
@@ -220,17 +262,9 @@ const SLIDES = [
   },
   {
     html: `
-      <h2>2라운드 끝!<br>수고하셨습니다 :)</h2>
+      <h2>3라운드 끝!<br>수고하셨습니다 :)</h2>
     `,
     note: '',
-  },
-  {
-    html: `
-      <h2>3라운드<br>나는 누구일까요?</h2>
-      <h2>게임 규칙</h2>
-      <p>1. 화면에 나온 사진을 유심히 살펴주세요.<br>2. 어느 분인지 아신다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
-    `,
-    note: '규칙을 소리 내어 읽어주세요.',
   },
   {
     html: `
