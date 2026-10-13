@@ -21,7 +21,6 @@ const SLIDES = [
     note: '입장한 참가자 수를 확인하고 시작하세요.',
   },
   {
-    button: '1라운드',
     html: `
       <h2>1라운드<br>스드스인의 기본 덕목</h2>
       <h2>게임 규칙</h2>
@@ -100,7 +99,6 @@ const SLIDES = [
     note: '',
   },
   {
-    button: '2라운드',
     html: `
       <h2>2라운드<br>SA그룹의 기본 덕목</h2>
       <h2>게임 규칙</h2>
@@ -175,7 +173,6 @@ const SLIDES = [
     note: '',
   },
   {
-    button: '3라운드',
     html: `
       <h2>3라운드<br>나는 누구일까요?</h2>
       <h2>게임 규칙</h2>
