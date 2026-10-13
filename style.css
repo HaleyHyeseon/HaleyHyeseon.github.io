@@ -205,5 +205,5 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 }
 
 /* ---------- 이미지 블러 ---------- */
-.stage img.blur  { filter: blur(10px); }
-.stage img.blur2  { filter: blur(6px); }
+.stage img.blur  { filter: blur(15px); }
+.stage img.blur2  { filter: blur(9px); }
