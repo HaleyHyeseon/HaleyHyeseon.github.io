@@ -17,7 +17,7 @@ const SLIDES = [
       <h1>10월 SCP SA그룹 도란도란</h1>
       <h2>그룹장杯 SA생결단</h2>
       <p>잠시 후 게임이 시작됩니다</p>
-      <p>13:42 커밋</p>
+      <p>13:48 커밋</p>
     `,
     note: '입장한 참가자 수를 확인하고 시작하세요.',
   },
@@ -30,83 +30,83 @@ const SLIDES = [
     note: '규칙을 소리 내어 읽어주세요.',
   },
   {
-    html: `<img class="px200 blur" src="images/AlibabaCloud.png" alt="">`,
+    html: `<img class="px200 blur" src="images/AWS.png" alt="">`,
     note: 'AWS',
+  },
+  {
+    html: `<img class="px200" src="images/AWS.png" alt="">`,
+    note: 'AWS',
+  },
+  {
+    html: `<img class="px200 blur2" src="images/oracle-cloud.png" alt="">`,
+    note: 'Oracle Cloud',
+  },
+  {
+    html: `<img class="px200" src="images/oracle-cloud.png" alt="">`,
+    note: 'Oracle Cloud',
+  },
+  {
+    html: `<img class="px200 blur" src="images/low_NCP_logo_white_200x200.png" alt="">`,
+    note: '네이버클라우드',
+  },
+  {
+    html: `<img class="px200" src="images/low_NCP_logo_white_200x200.png" alt="">`,
+    note: '네이버클라우드',
+  },
+  {
+    html: `<img class="px200 blur2" src="images/MsAzure.png" alt="">`,
+    note: 'MS Azure',
+  },
+  {
+    html: `<img class="px200" src="images/MsAzure.png" alt="">`,
+    note: 'MS Azure',
+  },
+  {
+    html: `<img class="px200 blur" src="images/SamsungSDS.png" alt="">`,
+    note: '삼성SDS',
+  },
+  {
+    html: `<img class="px200" src="images/SamsungSDS.png" alt="">`,
+    note: '삼성SDS',
+  },
+  {
+    html: `<img class="px200 blur" src="images/GoogleCloud.png" alt="">`,
+    note: 'Google Cloud',
+  },
+  {
+    html: `<img class="px200" src="images/GoogleCloud.png" alt="">`,
+    note: 'Google Cloud',
+  },
+  {
+    html: `<img class="px200 blur" src="images/kt_cloud_CI_01_(Positive).png" alt="">`,
+    note: 'KT Cloud',
+  },
+  {
+    html: `<img class="px200" src="images/kt_cloud_CI_01_(Positive).png" alt="">`,
+    note: 'KT Cloud',
+  },
+  {
+    html: `<img class="px200 blur" src="images/AlibabaCloud.png" alt="">`,
+    note: 'Alibaba Cloud',
   },
   {
     html: `<img class="px200" src="images/AlibabaCloud.png" alt="">`,
-    note: 'AWS',
-  },
-  {
-    html: `<img class="px100 blur" src="images/oracle-cloud.png" alt="">`,
-    note: 'Oracle Cloud',
-  },
-  {
-    html: `<img class="px100" src="images/oracle-cloud.png" alt="">`,
-    note: 'Oracle Cloud',
-  },
-  {
-    html: `<img class="px100 blur" src="images/low_NCP_logo_white_200x200.png" alt="">`,
-    note: '네이버클라우드',
-  },
-  {
-    html: `<img class="px100" src="images/low_NCP_logo_white_200x200.png" alt="">`,
-    note: '네이버클라우드',
-  },
-  {
-    html: `<img class="px100 blur" src="images/MsAzure.png" alt="">`,
-    note: 'MS Azure',
-  },
-  {
-    html: `<img class="px100" src="images/MsAzure.png" alt="">`,
-    note: 'MS Azure',
-  },
-  {
-    html: `<img class="px100 blur" src="images/SamsungSDS.png" alt="">`,
-    note: '삼성SDS',
-  },
-  {
-    html: `<img class="px100" src="images/SamsungSDS.png" alt="">`,
-    note: '삼성SDS',
-  },
-  {
-    html: `<img class="px100 blur" src="images/GoogleCloud.png" alt="">`,
-    note: 'Google Cloud',
-  },
-  {
-    html: `<img class="px100" src="images/GoogleCloud.png" alt="">`,
-    note: 'Google Cloud',
-  },
-  {
-    html: `<img class="px100 blur" src="images/kt_cloud_CI_01_(Positive).png" alt="">`,
-    note: 'KT Cloud',
-  },
-  {
-    html: `<img class="px100" src="images/kt_cloud_CI_01_(Positive).png" alt="">`,
-    note: 'KT Cloud',
-  },
-  {
-    html: `<img class="px100 blur" src="images/AlibabaCloud.png" alt="">`,
     note: 'Alibaba Cloud',
   },
   {
-    html: `<img class="px100" src="images/AlibabaCloud.png" alt="">`,
-    note: 'Alibaba Cloud',
-  },
-  {
-    html: `<img class="px100 blur" src="images/IBM_Cloud_logo.png" alt="">`,
+    html: `<img class="px200 blur2" src="images/IBM_Cloud_logo.png" alt="">`,
     note: 'IBM Cloud',
   },
   {
-    html: `<img class="px100" src="images/IBM_Cloud_logo.png" alt="">`,
+    html: `<img class="px200" src="images/IBM_Cloud_logo.png" alt="">`,
     note: 'IBM Cloud',
   },
   {
-    html: `<img class="px100 blur" src="images/NhnCloud.png" alt="">`,
+    html: `<img class="px200 blur2" src="images/NhnCloud.png" alt="">`,
     note: 'NHN CLoud',
   },
   {
-    html: `<img class="px100" src="images/NhnCloud.png" alt="">`,
+    html: `<img class="px200" src="images/NhnCloud.png" alt="">`,
     note: 'NHN CLoud',
   },
   {
