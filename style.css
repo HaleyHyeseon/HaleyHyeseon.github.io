@@ -176,7 +176,9 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
   image-rendering: pixelated;  /* 확대해도 흐려지지 않고 또렷하게 */
 }
 
-/* ---------- 100x100 픽셀로 확대해서 보여주기 ---------- */
+.stage:has(img.px100) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
+
+/* ---------- 200x200 픽셀로 확대해서 보여주기 ---------- */
 .stage img.px200 {
   width: 200px;
   height: 200px;
@@ -185,8 +187,7 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
   image-rendering: pixelated;  /* 확대해도 흐려지지 않고 또렷하게 */
 }
 
-
-.stage:has(img.px100) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
+.stage:has(img.px200) { background: #fff; }  /* 슬라이드 배경을 흰색으로 */
 
 /* ---------- 이동 버튼 (휴대폰용) ---------- */
 .jumps {
@@ -204,4 +205,4 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
 }
 
 /* ---------- 이미지 블러 ---------- */
-.stage img.blur  { filter: blur(15px); }
+.stage img.blur  { filter: blur(10px); }
