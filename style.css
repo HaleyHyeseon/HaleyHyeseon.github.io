@@ -192,3 +192,6 @@ body.host { height: auto; min-height: 100%; padding: 16px; }
   .controls button { padding: 14px 22px; font-size: 16px; }
   .hint { display: none; }  /* 키보드 안내는 휴대폰에선 숨김 */
 }
+
+/* ---------- 이미지 블러 ---------- */
+.stage img.blur  { filter: blur(15px); }
