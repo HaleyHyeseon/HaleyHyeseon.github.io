@@ -14,16 +14,16 @@
 const SLIDES = [
   {
     html: `
-      <h1>10월 SCP SA그룹 도란도란</h1>
-      <h2>그룹장杯 SA생결단</h2>
-      <p>잠시 후 게임이 시작됩니다</p>
-      <p>13:50 커밋</p>
+      <h1>그룹장杯 SA생결단</h1>
+      <h2>10월 SCP SA그룹 도란도란</h2>
+      <p>잠시 후 게임이 시작됩니다 :)</p>
+      <p>261021-1300 커밋</p>
     `,
     note: '입장한 참가자 수를 확인하고 시작하세요.',
   },
   {
     html: `
-      <h2>1라운드<br>IT인의 기본 덕목</h2>
+      <h2>1라운드<br>CSP인의 기본 덕목</h2>
       <h2>게임 규칙</h2>
       <p>1. 화면에 나온 로고를 실눈 뜨고 살펴주세요.<br>2. 짐작가는 회사가 있다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
     `,
@@ -197,7 +197,7 @@ const SLIDES = [
     html: `
       <h2>3라운드<br>SA그룹의 기본 덕목</h2>
       <h2>게임 규칙</h2>
-      <p>1. 화면에 나온 그림을 유심히 살펴주세요.<br>2. 이름을 아신다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
+      <p>1. 화면에 나온 아이콘을 유심히 살펴주세요.<br>2. 무슨 서비스인지 아신다면 손을 들어주세요.<br>3. 진행자가 지목하면 답변을 외쳐주세요.</p>
     `,
     note: '규칙을 소리 내어 읽어주세요.',
   },
@@ -254,8 +254,8 @@ const SLIDES = [
     note: 'Dedicated Cloud',
   },
   {
-    html: `<img class="px100" src="images/ic_service_acceleratedServer_44.png" alt="">`,
-    note: 'Accelerated Server (서비스명이 바뀌었습니다)',
+    html: `<img class="px100" src="images/ic_service_PostgreSQL_44.png" alt="">`,
+    note: 'PostgreSQL(DBaaS)',
   },
   {
     html: `<img class="px100" src="images/ic_service_vpn_44.png" alt="">`,
